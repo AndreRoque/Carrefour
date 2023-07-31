@@ -1,4 +1,4 @@
-#Aplicação Fluxo Caixa
+# Aplicação Fluxo Caixa
 
 Aplicação responsavel por creditar e debitar valores e mostrar o saldo consolidado diario
 
@@ -20,7 +20,7 @@ Para que a aplicação funcione, algumas variaveis de ambiente devem ser informa
 - ASPNETCORE_ENVIRONMENT: Ambiente onde esta a aplicação (desenvolvimento, homologação, produção)
 - MAX_MEMORY: Quantidade maxima de memoria que a aplicação deve usar. Caso passe disso, o endpoint healhcheck retornará erro (400). Com isso a aplicação poderá ser reiniciada ou outra ação pode ser tomada
 
-##Para executar via docker:
+## Para executar via docker:
 
 - docker build -t fluxocaixa:1 .
 - docker run -p 5000:80 --name fluxocaixa fluxocaixa:1
