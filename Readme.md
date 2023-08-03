@@ -31,4 +31,4 @@ Fiz um desenho de arquitetura considerando um monolito (ja que a aplicaçao é m
 
 O desenho esta disponivel aqui:
 
-https://github.com/AndreRoque/Carrefour/blob/main/docs/Arquitetura%20macro%20-%20Carrefour.pptx
+https://github.com/AndreRoque/Carrefour/tree/main/docs
