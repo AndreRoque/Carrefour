@@ -26,3 +26,8 @@ Para que a aplicação funcione, algumas variaveis de ambiente devem ser informa
 - docker run -p 5000:80 --name fluxocaixa fluxocaixa:1
 
 Acesse: http://localhost:5000/swagger
+
+Fiz um desenho de arquitetura considerando um monolito (ja que a aplicaçao é muito simples) com um frontend SPA com angular por exemplo e backend em dot net hospedado na azure usando AKS (kubernetes)
+
+O desenho esta disponivel aqui:
+
