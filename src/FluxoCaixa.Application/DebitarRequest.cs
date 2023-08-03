@@ -8,9 +8,11 @@ namespace FluxoCaixa.Application
     {
         #region Public Properties
 
-        [DataMember]
+        [DataMember(Name = "valor")]
         public decimal Valor { get; set; }
 
         #endregion Public Properties
     }
+
+    
 }

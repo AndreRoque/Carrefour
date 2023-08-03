@@ -16,32 +16,32 @@
         {
             if (dia > 31)
             {
-                throw new ApplicationException("data invalida!");
+                throw new ApplicationException("dia não pode ser maior que 31!");
             }
 
             if (dia < 1)
             {
-                throw new ApplicationException("data invalida!");
+                throw new ApplicationException("dia não pode ser menor que 1!");
             }
 
             if (mes > 12)
             {
-                throw new ApplicationException("data invalida!");
+                throw new ApplicationException("mes não pode ser maior que 12!");
             }
 
             if (mes < 1)
             {
-                throw new ApplicationException("data invalida!");
+                throw new ApplicationException("mes não pode ser menor que 1!");
             }
 
             if (ano > 2100)
             {
-                throw new ApplicationException("data invalida!");
+                throw new ApplicationException("ano invalido!");
             }
 
             if (ano < 1900)
             {
-                throw new ApplicationException("data invalida!");
+                throw new ApplicationException("ano invalido!");
             }
 
             _dia = dia;

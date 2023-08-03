@@ -28,13 +28,13 @@ namespace FluxoCaixa.Application
             return response;
         }
 
-        public BaseResponse GerarConsolidado()
+        public BaseResponse GerarConsolidado(ConsolidadoRequest consolidadoRequest)
         {
             var fluxoCaixa = new Domain.Entity.FluxoCaixa();
 
-            int dia = DateTime.Now.Day;
-            int mes = DateTime.Now.Month;
-            int ano = DateTime.Now.Year;
+            int dia = consolidadoRequest.Data.Day;
+            int mes = consolidadoRequest.Data.Month;
+            int ano = consolidadoRequest.Data.Year;
 
             decimal saldo = fluxoCaixa.SaldoConsolidado(dia, mes, ano);
 

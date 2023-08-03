@@ -26,7 +26,10 @@ if (string.IsNullOrWhiteSpace(configuration["MAX_MEMORY"]))
     throw new ApplicationException("MAX_MEMORY não especificado");
 }
 
-builder.Services.AddScoped<IFluxoCaixaAppService, FluxoCaixaAppService>();
+//builder.Services.AddScoped<IFluxoCaixaAppService, FluxoCaixaAppService>();
+builder.Services.AddScoped<IFluxoCaixaAppService, FluxoCaixaValidator>(provider =>
+    new FluxoCaixaValidator(
+        new FluxoCaixaAppService()));
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

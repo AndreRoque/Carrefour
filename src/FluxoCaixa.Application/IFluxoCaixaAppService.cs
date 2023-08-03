@@ -10,7 +10,7 @@ namespace FluxoCaixa.Application
 
         BaseResponse Debitar(DebitarRequest debitarRequest);
 
-        BaseResponse GerarConsolidado();
+        BaseResponse GerarConsolidado(ConsolidadoRequest consolidadoRequest);
 
         #endregion Public Methods
     }

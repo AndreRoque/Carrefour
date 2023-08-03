@@ -93,13 +93,13 @@ namespace FluxoCaixa.API.Controllers
         [Route(RouteConst.MostrarSaldoConsolidado)]
         [ProducesResponseType(200, Type = typeof(SaldoConsolidadoResponse))]
         [ProducesResponseType(400, Type = typeof(ErroResponse))]
-        public IActionResult GerarConsolidado()
+        public IActionResult GerarConsolidado(ConsolidadoRequest consolidadoRequest)
         {
             BaseResponse response;
 
             try
             {
-                response = _service.GerarConsolidado();
+                response = _service.GerarConsolidado(consolidadoRequest);
             }
             catch (ApplicationException exception)
             {
